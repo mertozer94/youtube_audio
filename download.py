@@ -27,6 +27,8 @@ ydl_opts = {
     }],
     'logger': MyLogger(),
     'progress_hooks': [my_hook],
+    'ignoreerrors': True
 }
+
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-    ydl.download(['https://www.youtube.com/playlist?list=PLoSfhtvSErqAfIOMDXvSqF72CNjsAh5DD'])
+    ydl.download(['https://www.youtube.com/playlist?list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO'])
