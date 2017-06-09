@@ -19,6 +19,7 @@ def my_hook(d):
 # --download-archive for only new videos
 
 ydl_opts = {
+    'format': 'best',
     'logger': MyLogger(),
     'progress_hooks': [my_hook],
     'ignoreerrors': True
